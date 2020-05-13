@@ -1,12 +1,6 @@
 {
-  "Ansi 5 Color" : {
-    "Red Component" : 0.96095067262649536,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.77328759804368019,
-    "Alpha Component" : 1,
-    "Green Component" : 0.53200650215148926
-  },
-  "ASCII Ligatures" : true,
+  "Thin Strokes" : 3,
+  "Set Local Environment Vars" : false,
   "Working Directory" : "\/Users\/iiiii",
   "Prompt Before Closing 2" : 2,
   "Selected Text Color" : {
@@ -42,6 +36,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.80792236328125
   },
+  "Blend" : 1,
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
   "Ansi 4 Color" : {
@@ -171,7 +166,6 @@
     "Green Component" : 0.63930690277035218
   },
   "Icon" : 1,
-  "Use Non-ASCII Font" : true,
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -179,14 +173,15 @@
     "Alpha Component" : 1,
     "Green Component" : 0.35916060209274292
   },
+  "Use Non-ASCII Font" : true,
   "Shortcut" : "",
   "Background Image Location" : "",
   "Bold Color" : {
-    "Red Component" : 0.43502336740493774,
+    "Red Component" : 0.27147648628478199,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.52579891681671143,
+    "Blue Component" : 0.328125,
     "Alpha Component" : 1,
-    "Green Component" : 0.48034048080444336
+    "Green Component" : 0.29975664692915288
   },
   "Use Cursor Guide" : false,
   "Unlimited Scrollback" : true,
@@ -432,7 +427,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.8280487060546875
   },
-  "Window Type" : 0,
+  "Window Type" : 12,
   "Use Bright Bold" : false,
   "Cursor Text Color" : {
     "Red Component" : 0.43502336740493774,
@@ -481,9 +476,9 @@
     "Alpha Component" : 0.5,
     "Green Component" : 0.1491314172744751
   },
-  "Smart Cursor Color" : false,
+  "Smart Cursor Color" : true,
   "Ambiguous Double Width" : false,
-  "Blur Radius" : 6.6406249999999991,
+  "Blur Radius" : 30,
   "Background Image Mode" : 0,
   "Cursor Type" : 2,
   "Ansi 0 Color" : {
@@ -528,7 +523,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.73725490196078436
   },
-  "Transparency" : 0.90000000000000002,
+  "Transparency" : 0.093654822335025395,
   "Initial Text" : "",
   "Background Color" : {
     "Red Component" : 0.94509804248809814,
@@ -538,7 +533,7 @@
     "Green Component" : 0.94509804248809814
   },
   "Screen" : -1,
-  "Initial Use Transparency" : false,
+  "Initial Use Transparency" : true,
   "Non Ascii Font" : "HackNerdFontComplete-Regular 14",
   "Ansi 13 Color" : {
     "Red Component" : 1,
@@ -551,7 +546,13 @@
   "Unicode Normalization" : 0,
   "Use Tab Color" : false,
   "Visual Bell" : true,
-  "Custom Directory" : "No",
-  "Thin Strokes" : 3,
-  "Set Local Environment Vars" : false
+  "ASCII Ligatures" : true,
+  "Ansi 5 Color" : {
+    "Red Component" : 0.96095067262649536,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.77328759804368019,
+    "Alpha Component" : 1,
+    "Green Component" : 0.53200650215148926
+  },
+  "Custom Directory" : "No"
 }
