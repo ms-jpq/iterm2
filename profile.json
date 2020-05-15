@@ -451,7 +451,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.30058383941650391
   },
-  "Name" : "Default",
+  "Name" : "默认配置",
   "Blinking Cursor" : true,
   "Guid" : "F35A83E6-515C-4760-BA93-4840972E838F",
   "Idle Code" : 0,
@@ -538,9 +538,9 @@
   "Ansi 13 Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.83775799535214901,
+    "Blue Component" : 0.80172562599182129,
     "Alpha Component" : 1,
-    "Green Component" : 0.70750737190246582
+    "Green Component" : 0.642547607421875
   },
   "Columns" : 120,
   "Unicode Normalization" : 0,
