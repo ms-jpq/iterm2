@@ -19,7 +19,7 @@
 	<key>BadgeFont</key>
 	<string>Helvetica Neue</string>
 	<key>Command</key>
-	<string></string>
+	<string>/usr/local/bin/zsh</string>
 	<key>CopySelection</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -911,11 +911,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>299 305 841 470 0 0 1440 877 </string>
+	<string>859 710 841 470 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 17 775 854 0 0 1440 877 </string>
+	<string>6 13 2548 1398 0 0 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_F35A83E6-515C-4760-BA93-4840972E838F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_F35A83E6-515C-4760-BA93-4840972E838F_selection</key>
@@ -1961,9 +1961,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{283, 761}</string>
+		<string>{942, 808}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
