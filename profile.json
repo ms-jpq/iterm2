@@ -421,11 +421,11 @@
   "Use Bold Font" : true,
   "Silence Bell" : true,
   "Ansi 12 Color" : {
-    "Red Component" : 0.4882049560546875,
+    "Red Component" : 0.34765625,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.8280487060546875
+    "Green Component" : 0.78082759253600076
   },
   "Window Type" : 12,
   "Use Bright Bold" : false,
