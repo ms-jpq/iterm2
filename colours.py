@@ -94,7 +94,7 @@ def p_alacritty(parsed: Parsed, misc: Dict[str, str]) -> Any:
   acc = {}
   primary = {}
   cursor = {}
-  primary["foregroud"] = misc["foregroud"]
+  primary["foregroud"] = misc["foreground"]
   primary["background"] = misc["background"]
   cursor["cursor"] = misc["cursor"]
   cursor["text"] = misc["cursor_text"]
