@@ -81,10 +81,13 @@ def p_args() -> Namespace:
 def p_ttyd(parsed: Parsed, misc: Dict[str, str]) -> Any:
   def title_case(sym: str) -> str:
     return sym[0].upper() + sym[1:]
+  required = {key: val
+              for key, val in misc.items()
+              if key != "cursor_text"}
   acc = {f"bright{title_case(colour)}" if bright else colour: hex
          for bright, coll in parsed.items()
          for colour, hex in coll.items()}
-  return acc
+  return {**acc, **required}
 
 
 def p_alacritty(parsed: Parsed, misc: Dict[str, str]) -> Any:
