@@ -65,7 +65,7 @@ def p_misc(data: Dict[str, any]) -> Dict[str, str]:
   background = p_rgb(misc_colours["Background Color"])
   cursor = p_rgb(misc_colours["Cursor Color"])
   cursor_text = p_rgb(misc_colours["Cursor Text Color"])
-  return {"foregroud": foregroud,
+  return {"foreground": foregroud,
           "background": background,
           "cursor": cursor,
           "cursor_text": cursor_text}
