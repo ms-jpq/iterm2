@@ -57,6 +57,20 @@ def p_colour(data: Dict[str, Any]) -> Parsed:
   return groups
 
 
+def p_misc(data: Dict[str, any]) -> Dict[str, str]:
+  misc_colours: Dict[str, Any] = {key: value
+                                  for key, value in data.items()
+                                  if "Color" in key and key not in lookup}
+  foregroud = p_rgb(misc_colours["Foreground Color"])
+  background = p_rgb(misc_colours["Background Color"])
+  cursor = p_rgb(misc_colours["Cursor Color"])
+  cursor_text = p_rgb(misc_colours["Cursor Text Color"])
+  return {"foregroud": foregroud,
+          "background": background,
+          "cursor": cursor,
+          "cursor_text": cursor_text}
+
+
 def p_args() -> Namespace:
   parser = ArgumentParser()
   parser.add_argument("--ttyd", action="store_true")
@@ -64,12 +78,25 @@ def p_args() -> Namespace:
   return parser.parse_args()
 
 
-def p_ttyd(parsed: Parsed) -> Any:
-  pass
+def p_ttyd(parsed: Parsed, misc: Dict[str, str]) -> Any:
+  def title_case(sym: str) -> str:
+    return sym[0].upper() + sym[1:]
+  acc = {f"bright{title_case(colour)}" if bright else colour: hex
+         for bright, coll in parsed.items()
+         for colour, hex in coll.items()}
+  return acc
 
 
-def p_alacritty(parsed: Parsed) -> Any:
+def p_alacritty(parsed: Parsed, misc: Dict[str, str]) -> Any:
   acc = {}
+  primary = {}
+  cursor = {}
+  primary["foregroud"] = misc["foregroud"]
+  primary["background"] = misc["background"]
+  cursor["cursor"] = misc["cursor"]
+  cursor["text"] = misc["cursor_text"]
+  acc["primary"] = primary
+  acc["cursor"] = cursor
   acc["bright"] = parsed[True]
   acc["normal"] = parsed[False]
   return acc
@@ -79,12 +106,13 @@ def main() -> None:
   args = p_args()
   data: Dict[str, Any] = load_json("profile.json")
   parsed = p_colour(data)
-
+  misc_colours = p_misc(data)
   if args.ttyd:
-    ttyd = p_ttyd(parsed)
-    print(ttyd)
+    ttyd = p_ttyd(parsed, misc_colours)
+    serialized = dumps(ttyd, indent=2)
+    print(serialized)
   else:
-    alacritty = p_alacritty(parsed)
+    alacritty = p_alacritty(parsed, misc_colours)
     serialized = dumps(alacritty, indent=2)
     print(serialized)
 
