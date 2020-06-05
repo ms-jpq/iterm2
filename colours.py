@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from argparse import ArgumentParser, Namespace
 from functools import reduce
 from json import dumps, load
 from typing import *
@@ -42,7 +43,10 @@ def p_rgb(val: Any) -> str:
   return f"#{red}{green}{blue}"
 
 
-def p_colour(data: Dict[str, Any]) -> Any:
+Parsed = Dict[bool, Dict[str, str]]
+
+
+def p_colour(data: Dict[str, Any]) -> Parsed:
   parsed = ((*lookup[key], p_rgb(value))
             for key, value in data.items()
             if key.startswith("Ansi") and key.endswith("Color"))
@@ -53,8 +57,36 @@ def p_colour(data: Dict[str, Any]) -> Any:
   return groups
 
 
-data: Dict[str, Any] = load_json("profile.json")
-parsed = p_colour(data)
-serialized = dumps(parsed)
+def p_args() -> Namespace:
+  parser = ArgumentParser()
+  parser.add_argument("--ttyd", action="store_true")
+  parser.add_argument("--alacritty", action="store_true")
+  return parser.parse_args()
 
-print(serialized)
+
+def p_ttyd(parsed: Parsed) -> Any:
+  pass
+
+
+def p_alacritty(parsed: Parsed) -> Any:
+  acc = {}
+  acc["bright"] = parsed[True]
+  acc["normal"] = parsed[False]
+  return acc
+
+
+def main() -> None:
+  args = p_args()
+  data: Dict[str, Any] = load_json("profile.json")
+  parsed = p_colour(data)
+
+  if args.ttyd:
+    ttyd = p_ttyd(parsed)
+    print(ttyd)
+  else:
+    alacritty = p_alacritty(parsed)
+    serialized = dumps(alacritty, indent=2)
+    print(serialized)
+
+
+main()
