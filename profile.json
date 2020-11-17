@@ -60,7 +60,7 @@
   ],
   "Non-ASCII Ligatures" : false,
   "Scrollback Lines" : 0,
-  "Draw Powerline Glyphs" : false,
+  "Draw Powerline Glyphs" : true,
   "Status Bar Layout" : {
     "components" : [
       {
@@ -161,7 +161,7 @@
   "Ansi 3 Color" : {
     "Red Component" : 0.96525377035140991,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.067869405727833509,
+    "Blue Component" : 0.067869405727833537,
     "Alpha Component" : 1,
     "Green Component" : 0.63930690277035218
   },
@@ -523,7 +523,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.73725490196078436
   },
-  "Transparency" : 0.093654822335025395,
+  "Transparency" : 0.093654822335025423,
   "Initial Text" : "",
   "Background Color" : {
     "Red Component" : 0.94509804248809814,
@@ -534,7 +534,7 @@
   },
   "Screen" : -1,
   "Initial Use Transparency" : true,
-  "Non Ascii Font" : "HackNerdFontComplete-Regular 14",
+  "Non Ascii Font" : "Hack-Regular 14",
   "Ansi 13 Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
