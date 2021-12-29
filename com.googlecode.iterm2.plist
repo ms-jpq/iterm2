@@ -7,7 +7,7 @@
 	<key>AboutToPasteTabsWithCancel_selection</key>
 	<integer>2</integer>
 	<key>Command</key>
-	<string>/opt/homebrew/bin/zsh</string>
+	<string></string>
 	<key>Default Bookmark Guid</key>
 	<string>A3AE1DEB-3BDE-40D6-9753-8B8ACB2AAB67</string>
 	<key>HapticFeedbackForEsc</key>
