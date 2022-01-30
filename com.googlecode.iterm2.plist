@@ -1103,5 +1103,9 @@
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>disableMetalWhenUnplugged</key>
+	<false/>
+	<key>metalMaximizeThroughput</key>
+	<false/>
 </dict>
 </plist>
