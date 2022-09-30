@@ -66,7 +66,7 @@
     "tmux"
   ],
   "Non-ASCII Ligatures" : false,
-  "Scrollback Lines" : 0,
+  "Scrollback Lines" : 6000,
   "Draw Powerline Glyphs" : false,
   "Status Bar Layout" : {
     "components" : [
@@ -164,7 +164,7 @@
     "Alpha Component" : 0.25,
     "Green Component" : 0.9268307089805603
   },
-  "BM Growl" : false,
+  "BM Growl" : true,
   "Ansi 3 Color" : {
     "Red Component" : 0.96525377035140991,
     "Color Space" : "sRGB",
@@ -191,7 +191,7 @@
     "Green Component" : 0.29975664692915288
   },
   "Use Cursor Guide" : false,
-  "Unlimited Scrollback" : true,
+  "Unlimited Scrollback" : false,
   "Allow modifyOtherKeys" : false,
   "Custom Command" : "Custom Shell",
   "Keyboard Map" : {
@@ -447,7 +447,7 @@
     "Green Component" : 0.53349101195370197
   },
   "Use Bold Font" : true,
-  "Silence Bell" : true,
+  "Silence Bell" : false,
   "Ansi 12 Color" : {
     "Red Component" : 0.34765625,
     "Color Space" : "sRGB",
@@ -506,7 +506,7 @@
   },
   "Smart Cursor Color" : true,
   "Ambiguous Double Width" : false,
-  "Blur Radius" : 30,
+  "Blur Radius" : 0.10000000000000001,
   "Background Image Mode" : 0,
   "Cursor Type" : 2,
   "Ansi 0 Color" : {
@@ -517,7 +517,7 @@
     "Green Component" : 0.12549019607843137
   },
   "Session Close Undo Timeout" : 5,
-  "Blur" : true,
+  "Blur" : false,
   "Vertical Spacing" : 1,
   "Normal Font" : "SFMono-Semibold 14",
   "Use Underline Color" : false,
@@ -551,7 +551,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.73725490196078436
   },
-  "Transparency" : 0,
+  "Transparency" : 0.05442985372340426,
   "Initial Text" : "",
   "Background Color" : {
     "Red Component" : 0.94509804248809814,
@@ -561,7 +561,7 @@
     "Green Component" : 0.94509804248809814
   },
   "Screen" : -1,
-  "Initial Use Transparency" : false,
+  "Initial Use Transparency" : true,
   "Non Ascii Font" : "HackNerdFontCompleteM-Regular 14",
   "Ansi 13 Color" : {
     "Red Component" : 1,
